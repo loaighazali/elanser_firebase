@@ -1,6 +1,7 @@
 import 'package:elanser_firebase/screens/auth/SignIn_screen.dart';
 import 'package:elanser_firebase/screens/auth/registration_screen.dart';
 import 'package:elanser_firebase/screens/auth/signUp_screen.dart';
+import 'package:elanser_firebase/screens/create_screen.dart';
 import 'package:elanser_firebase/screens/lunch_screen.dart';
 import 'package:elanser_firebase/screens/note_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/signIn_screen' : (context) =>const SignInScreen(),
         '/signUp_screen' : (context) =>const SignUpScreen(),
         '/note_screen' : (context) =>const NoteScreen(),
+        '/create_screen' : (context) =>const CreateScreen(),
 
       },
     );

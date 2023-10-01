@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "674159764321",
+    "project_id": "elancer-firebase-a9395",
+    "storage_bucket": "elancer-firebase-a9395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674159764321:android:12ac38dd97c1731283db20",
+        "android_client_info": {
+          "package_name": "com.example.elanser_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlJm163Ozp2ws2OcFSDs_6btfaKqQp4LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

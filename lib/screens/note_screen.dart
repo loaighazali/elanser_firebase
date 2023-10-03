@@ -26,17 +26,23 @@ class _NoteScreenState extends State<NoteScreen> with Helpers {
             onPressed: () async {
               await logout();
             },
-            icon: Icon(Icons.logout),
+            icon:const  Icon(Icons.logout),
           ),
           IconButton(
             onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => CreateScreen(),
+                    builder: (context) =>const CreateScreen(),
                   ));
             },
-            icon: Icon(Icons.save),
+            icon:const  Icon(Icons.save),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/images_screen');
+            },
+            icon:const Icon(Icons.image),
           ),
         ],
       ),
@@ -53,13 +59,13 @@ class _NoteScreenState extends State<NoteScreen> with Helpers {
                 itemCount: documents.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    leading: Icon(Icons.notes),
+                    leading:const Icon(Icons.notes),
                     title: Text(documents[index].get('title')),
                     subtitle: Text(documents[index].get('details')),
                     trailing: IconButton(
                       onPressed: () async =>
                           await delete(path: documents[index].id),
-                      icon: Icon(
+                      icon:const Icon(
                         Icons.delete,
                         color: Colors.red,
                       ),
